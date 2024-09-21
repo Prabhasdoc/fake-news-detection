@@ -5,9 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 data = pd.read_csv("fake_or_real_news.csv")
 
-x = np.array(data["title"])
-y = np.array(data["label"])
-
 cv = CountVectorizer()
 x = cv.fit_transform(x)
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.2, random_state=42)
