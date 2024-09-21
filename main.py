@@ -11,6 +11,10 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.2, random_stat
 model = MultinomialNB()
 model.fit(xtrain, ytrain)
 
+x = np.array(data["title"])
+y = np.array(data["label"])
+
+
 import streamlit as st
 st.title("Fake News Detection System")
 def fakenewsdetection():
