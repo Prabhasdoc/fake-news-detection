@@ -22,6 +22,8 @@ def fakenewsdetection():
     if len(user) < 1:
         st.write("  ")
     else:
+
+        
         sample = user
         data = cv.transform([sample]).toarray()
         a = model.predict(data)
