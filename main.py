@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
-data = pd.read_csv("fake_or_real_news.csv")
+# data = pd.read_csv("fake_or_real_news.csv")
 
 cv = CountVectorizer()
 x = cv.fit_transform(x)
